@@ -1,0 +1,54 @@
+@use'variables';
+@use 'sass:map';
+
+//border radius
+
+.rounded-sm {
+    border-radius: map-get(variables.$rounded, "sm");
+}
+
+.rounded-md {
+    border-radius: map-get(variables.$rounded, "md");
+}
+
+.rounded-lg {
+    border-radius: map-get(variables.$rounded, "lg");
+}
+
+.rounded-full {
+    border-radius: map-get(variables.$rounded, "full");
+}
+
+
+// add more utility here
+
+// Margin and Padding Utilities
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+// Text Utilities
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+// Display Utilities
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}

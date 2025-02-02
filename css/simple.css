@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/***
+    The new CSS reset - version 1.11.3 (last updated 25.08.2024)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a,
+button {
+  cursor: revert;
+}
+
+ol,
+ul,
+menu,
+summary {
+  list-style: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: unset;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 27px;
+}
+
+body {
+  margin: 0 30px;
+}
+
+section {
+  margin: 30px 0 0 0;
+}
+
+ul {
+  margin: 0 0 0 30px;
+  padding: 30px 0 0 0;
+  list-style-type: disc;
+}
+
+ol {
+  margin: 0 0 0 30px;
+  padding: 30px 0 0 0;
+  list-style-type: decimal;
+}
+
+button,
+.btn,
+.btn-primary {
+  background: #5D3FD3;
+  color: #FAF9F6;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
+.btn.btn-secondary {
+  background: #E6E6FA;
+  color: #28282B;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
+.btn.btn-success {
+  background: #00A36C;
+  color: #FAF9F6;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
+.btn.btn-info {
+  background: #5F9EA0;
+  color: #FAF9F6;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
+.btn.btn-warning {
+  background: #FFC300;
+  color: #28282B;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
+.btn.btn-danger {
+  background: #E34234;
+  color: #FAF9F6;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 30px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: underline;
+  color: #5D3FD3;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px;
+  padding: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+input[type=text],
+input[type=email] {
+  border: 1px solid #28282B;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.rounded-sm {
+  border-radius: 6px;
+}
+
+.rounded-md {
+  border-radius: 14px;
+}
+
+.rounded-lg {
+  border-radius: 20px;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=simple.css.map */

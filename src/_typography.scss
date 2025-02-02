@@ -1,0 +1,38 @@
+@use 'simple-font';
+@use 'font-heading';
+@use 'variables';
+
+
+
+body {
+    font-family: variables.$simple-font;
+    font-weight: variables.$font-regular;
+    font-size: variables.$font-size-s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: variables.$font-heading;
+}
+
+h1 {
+    font-weight: variables.$font-bold;
+    font-size: variables.$font-size-2xl;
+}
+
+h2 {
+    font-weight: variables.$font-bold;
+    font-size: variables.$font-size-xl;
+}
+
+h3 {
+    font-weight: variables.$font-semibold;
+    font-size: variables.$font-size-l;
+}
+
+h4 {
+    font-weight: variables.$font-semibold;
+    font-size: variables.$font-size-m;
+}

@@ -1,0 +1,42 @@
+//colors
+$theme: (
+    'primary':#5D3FD3,
+    'secondary': #E6E6FA,
+    'success':#00A36C,
+    'warning':#FFC300,
+    'danger':#E34234,
+    'info': #5F9EA0,
+    'dark':#FAF9F6,
+    'light': #28282B
+);
+
+//typography
+$simple-font: "Poppins", serif;
+$font-heading: "Montserrat", serif;
+
+//font weights
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+//font size
+$font-size-xs: 16px;
+$font-size-s: 18px;
+$font-size-m: 27px;
+$font-size-l: 36px;
+$font-size-xl: 45px;
+$font-size-2xl: 64px;
+
+//base styles
+$list-ul: disc;
+$list-ol: decimal;
+$border-radius: 6px;
+
+//utility classes
+$rounded: (
+    "sm":6px,
+    "md":14px,
+    "lg":20px,
+    "full": 50%
+);

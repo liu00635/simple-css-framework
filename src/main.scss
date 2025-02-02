@@ -1,0 +1,12 @@
+//reset css
+@use 'reset';
+
+//typography (font-family, font-size, font-weight)
+@use 'typography';
+
+
+// base css styles (body, button, link, ol, ul, tables, forms, paddings & margins)
+@use 'base';
+
+//utility classes (border-radius, text-bold, opacity)
+@use 'utility';
