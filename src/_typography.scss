@@ -2,37 +2,79 @@
 @use 'font-heading';
 @use 'variables';
 
-
-
+// Base Typography Styles
 body {
     font-family: variables.$simple-font;
     font-weight: variables.$font-regular;
     font-size: variables.$font-size-s;
+    line-height: variables.$line-height-base;
+    color: map-get(variables.$theme, 'dark');
+    margin: 0;
+    padding: 0 variables.$spacing-md;
 }
 
-h1,
-h2,
-h3,
-h4 {
+// Headings
+h1, h2, h3, h4 {
     font-family: variables.$font-heading;
+    line-height: variables.$line-height-heading;
+    margin-bottom: variables.$spacing-md;
 }
 
 h1 {
     font-weight: variables.$font-bold;
     font-size: variables.$font-size-2xl;
+    color: map-get(variables.$theme, 'primary');
 }
 
 h2 {
     font-weight: variables.$font-bold;
     font-size: variables.$font-size-xl;
+    color: map-get(variables.$theme, 'primary');
 }
 
 h3 {
     font-weight: variables.$font-semibold;
     font-size: variables.$font-size-l;
+    color: map-get(variables.$theme, 'primary');
 }
 
 h4 {
     font-weight: variables.$font-semibold;
     font-size: variables.$font-size-m;
+    color: map-get(variables.$theme, 'primary');
+}
+
+// Paragraphs
+p {
+    font-size: variables.$font-size-s;
+    line-height: variables.$line-height-base;
+    margin-bottom: variables.$spacing-lg;
+    color: map-get(variables.$theme, 'dark');
+}
+
+// Links
+a {
+    font-family: variables.$simple-font;
+    font-weight: variables.$font-medium;
+    color: map-get(variables.$theme, 'primary');
+    text-decoration: underline;
+}
+
+a:hover {
+    color: map-get(variables.$theme, 'success');
+    text-decoration: none;
+}
+
+// Lists
+ul, ol {
+    margin: 0 0 variables.$spacing-lg variables.$spacing-lg;
+    font-size: variables.$font-size-s;
+}
+
+ul {
+    list-style-type: variables.$list-ul;
+}
+
+ol {
+    list-style-type: variables.$list-ol;
 }
