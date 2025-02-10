@@ -6,7 +6,7 @@ A lightweight and customizable CSS framework for building responsive and modern 
 
 To install the framework, you can:
 
-1. Download the `simple.css` file from the [repository](link-to-repository).
+1. Download the `simple.css` file from the [repository](https://github.com/liu00635/simple-css-framework).
 2. Include it in your HTML file.
 
 
