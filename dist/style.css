@@ -1,27 +1,18 @@
-@use'variables';
-@use 'sass:map';
-
-//border radius
-
 .rounded-sm {
-  border-radius: map.get(variables.$rounded, "sm");
+  border-radius: 6px;
 }
 
 .rounded-md {
-  border-radius: map.get(variables.$rounded, "md");
+  border-radius: 14px;
 }
 
 .rounded-lg {
-  border-radius: map.get(variables.$rounded, "lg");
+  border-radius: 20px;
 }
 
 .rounded-full {
-  border-radius: map.get(variables.$rounded, "full");
+  border-radius: 50%;
 }
-
-
-// add more utility here
-
 
 .m-0 {
   margin: 0;
@@ -47,7 +38,6 @@
   margin: auto;
 }
 
-// Padding Utilities
 .p-0 {
   padding: 0;
 }
@@ -68,7 +58,6 @@
   padding: 20px;
 }
 
-// Font Weight Utilities
 .fw-light {
   font-weight: 300;
 }
@@ -81,7 +70,6 @@
   font-weight: 700;
 }
 
-// Font Size Utilities
 .fs-sm {
   font-size: 12px;
 }
@@ -98,7 +86,6 @@
   font-size: 24px;
 }
 
-// Color Utilities
 .text-primary {
   color: #5D3FD3;
 }
@@ -131,7 +118,6 @@
   color: #FAF9F6;
 }
 
-// Background Color Utilities
 .bg-primary {
   background-color: #5D3FD3;
 }
@@ -164,8 +150,6 @@
   background-color: #FAF9F6;
 }
 
-
-// Text Utilities
 .text-center {
   text-align: center;
 }
@@ -174,7 +158,6 @@
   font-weight: bold;
 }
 
-// Display Utilities
 .d-block {
   display: block;
 }
@@ -183,39 +166,4 @@
   display: flex;
 }
 
-//Flexbox Utilities
-.justify-start {
-  justify-content: flex-start !important;
-}
-
-.justify-center {
-  justify-content: center !important;
-}
-
-.justify-end {
-  justify-content: flex-end !important;
-}
-
-.justify-between {
-  justify-content: space-between !important;
-}
-
-.justify-around {
-  justify-content: space-around !important;
-}
-
-.align-start {
-  align-items: flex-start !important;
-}
-
-.align-center {
-  align-items: center !important;
-}
-
-.align-end {
-  align-items: flex-end !important;
-}
-
-.align-stretch {
-  align-items: stretch !important;
-}
+/*# sourceMappingURL=style.css.map */
