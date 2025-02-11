@@ -25,7 +25,7 @@ ol {
 
 //buttons &links
 
-@mixin simple-btn($btn-bg-color: map-get(variables.$theme, "primary"), $btn-text-color: map-get(variables.$theme, "dark")) {
+@mixin simple-btn($btn-bg-color: map.get(variables.$theme, "primary"), $btn-text-color: map.get(variables.$theme, "light")) {
     background: $btn-bg-color;
     color: $btn-text-color;
     border-radius: variables.$border-radius;
@@ -45,29 +45,29 @@ button,
 }
 
 .btn.btn-secondary {
-    @include simple-btn(map-get(variables.$theme, "secondary"), map-get(variables.$theme, "light"))
+    @include simple-btn(map.get(variables.$theme, "secondary"), map.get(variables.$theme, "dark"))
 }
 
 .btn.btn-success {
-    @include simple-btn(map-get(variables.$theme, "success"), map-get(variables.$theme, "dark"))
+    @include simple-btn(map.get(variables.$theme, "success"), map.get(variables.$theme, "dark"))
 }
 
 .btn.btn-info {
-    @include simple-btn(map-get(variables.$theme, "info"), map-get(variables.$theme, "dark"))
+    @include simple-btn(map.get(variables.$theme, "info"), map.get(variables.$theme, "dark"))
 }
 
 .btn.btn-warning {
-    @include simple-btn(map-get(variables.$theme, "warning"), map-get(variables.$theme, "light"))
+    @include simple-btn(map.get(variables.$theme, "warning"), map.get(variables.$theme, "light"))
 }
 
 .btn.btn-danger {
-    @include simple-btn(map-get(variables.$theme, "danger"), map-get(variables.$theme, "dark"))
+    @include simple-btn(map.get(variables.$theme, "danger"), map.get(variables.$theme, "dark"))
 }
 
 //links
 a {
     text-decoration: underline;
-    color: map-get(variables.$theme, "primary")
+    color: map.get(variables.$theme, "primary")
 }
 
 //forms
@@ -85,16 +85,87 @@ form {
 
 input[type="text"],
 input[type="email"] {
-    border: 1px solid map-get(variables.$theme, "light");
+    border: 1px solid map.get(variables.$theme, "dark");
     padding: 6px;
     border-radius: variables.$border-radius;
 }
 
 //table
+// Base table styles
+.table-hover {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
 
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
 
+    th {
+        background-color: #343a40; // Dark background for the header
+        color: white;
+    }
 
+    tbody tr {
+        &:hover {
+            background-color: #f1f1f1; // Light background on row hover
+        }
+    }
 
+    // Hover effect for rows
+    tr:nth-child(even) {
+        background-color: #f9f9f9; // Light grey background for even rows
+    }
 
-  
-  
+    tr:nth-child(odd) {
+        background-color: white; // White background for odd rows
+    }
+
+    // Responsive styles
+    @media (max-width: 768px) {
+
+        th,
+        td {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+}
+
+// Add specific styles for the table-bordered class
+.table-bordered {
+
+    th,
+    td {
+        border: 1px solid #ddd;
+    }
+}
+
+// Large table styles for table-lg
+.table-lg {
+    font-size: 18px; // Larger font size for table-lg class
+}
+
+// Table head dark styling for table-head-dark class
+.table-head-dark {
+    th {
+        background-color: #343a40; // Dark background color for the header
+        color: white; // White text color in the header
+    }
+}
+
+// Responsive table styling for table-responsive class
+.table-responsive {
+    overflow-x: auto; // Allow horizontal scrolling for smaller screens
+    -webkit-overflow-scrolling: touch; // Smooth scrolling on touch devices
+}
+
+//flexbox styling
+.box {
+    width: 100px;
+    border-radius: 4px;
+}
